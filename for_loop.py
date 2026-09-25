@@ -56,3 +56,49 @@ raw_hours = ["40.0", "37.5", "45.0", "42.0"]
         overtime = 0.0
         
     print(f"Total: {total_hours} | Regular: {regular} | Overtime: {overtime}") """
+#5. Print each character of a string using a for loop.
+""" text=input("Enter a string:")
+for character in text:
+    print(character) """
+#6. Reverse a string using a for loop.
+""" text = input("Enter a string: ")
+reverse = ""
+
+for character in text:
+    reverse = character + reverse
+
+print(reverse) """
+#7. Count the number of vowels in a string using a for loop.
+""" text = input("Enter a string: ")
+
+vowels = "aeiou"
+
+count = 0
+
+for character in text:
+    if character in vowels:
+        count = count + 1
+
+print("Number of Vowels:", count) """
+#8. Find the largest number in a list using a for loop. 
+""" numbers=[10,25,7,18,42,15,62,]
+smallest=numbers[0]
+
+for number in numbers:
+    if number < smallest:
+        smallest=number
+
+print("Smallest number:", smallest) """
+#10. Check if a number is prime using a for loop.
+""" number=int(input("Enter a number:"))
+is_prime=True
+
+for i in range(2, number):
+    if number % i == 0:
+        is_prime = False
+
+if is_prime:
+    print("Prime")
+
+else:
+    print("Not Prime") """
